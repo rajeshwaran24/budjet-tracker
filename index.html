@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <title>Document</title>
+  <!-- fontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- normalize css -->
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  
+</head>
+<body>
+  <h1 class="nave">Expense Tracker <i class="fa-sharp fa-solid fa-sack-dollar"></i></h1>
+<main class="main">
+  
+  <div class="balance">
+    <p class="balance-1" id="balances">your Balance</p>
+    <p class="balance-amt" id="balance">$0.00</p>
+    <!--<h2 class="rupes" id="balance"><i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>0.00</h2>-->
+  </div>
+
+  
+    <div class="income">
+      <h3 class="income-1" id="incomes">Income</h3>
+      <p class="income-amt" id="income">$0.00</p>
+    <!--<h2 class="income-rupes" id="income"><i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>0.00</h2>-->
+    </div>
+    
+    <div class="expense">
+      <h3 class="expense-1" id="expanses">Expanse</h3>
+      <p class="expense-amt" id="expense">$0.00</p>
+    <!--<h2 class="expense-rupes" id="expanse"><i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>0.00</h2>-->
+    </div>
+  
+</main>
+
+<div class="card">
+
+  <div class="cash-card">
+    <h2 class="history">History</h2>
+    <ul id="list" class="list">
+  
+      <li class="minus"> 
+        <p class="cash-text">cash</p>
+        <p class="cash">
+          <span class="span-1"><i class="fa-sharp fa-solid fa-trash"></i></span>
+        </p></li>
+
+ <li class="plus">
+  <p class="cash-text">cash</p>
+  <p class="cash">
+    <span class="span-1"><i class="fa-sharp fa-solid fa-trash"></i></span>
+  </p>
+</li>
+    </ul>
+</div>
+
+
+  <div class="right">
+<h2 class="new-transaction" id="transaction">Add New Transaction</h2>
+<div class="right-1">
+    <form class="form" id="form">
+      <label for="transaction">Transaction</label>
+      <input type="text" id="Transaction" class="enter-transaction" placeholder="Enter Transaction" >
+
+      <label for="input-container">Amount >(negative-expense,positive-income</label>
+      <input class="enter-amount" placeholder="Enter Amount" id="amount">
+
+      <div class="btn-1">
+        <button class="but" id="btn'">Add Transaction</button>
+      </div>
+</form>
+
+</div>
+  </div>
+    
+  </iv>
+
+
+
+
+</div>
+
+<!-- script js -->
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
